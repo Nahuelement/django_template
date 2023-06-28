@@ -8,11 +8,11 @@
         <ul class="navbar-nav">
           <!-- Navigation links -->
           <li class="nav-item">
-            <a class="nav-link active text-warning" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active text-warning" aria-current="page" href="{% url 'home' %}">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-warning" href="#">Eventos y congresos</a>
-          </li>
+        <li class="nav-item">
+            <a class="nav-link text-warning" href="{% url 'eventos_congresos' %}">Eventos y Congresos</a>
+        </li>
           <li class="nav-item">
             <a class="nav-link text-warning" href="#">Servicios</a>
           </li>
