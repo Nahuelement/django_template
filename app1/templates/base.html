@@ -19,6 +19,10 @@
   </header>
   <main>
 
+    {% block 'navbar' %}
+    {%include 'navbar.html' %}
+    {% endblock %}
+
     {% block 'carousel' %}
     {%include 'carousel.html' %}
     {% endblock %}
