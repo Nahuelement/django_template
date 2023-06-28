@@ -15,9 +15,13 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+   
   </header>
   <main>
+
+    {% block 'carousel' %}
+    {%include 'carousel.html' %}
+    {% endblock %}
 
     {% block content1 %}
 
@@ -25,7 +29,7 @@
 
   </main>
   <footer>
-    
+
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
