@@ -8,11 +8,11 @@ class Plato(models.Model):
     img = models.CharField(max_length=50)
     precio = models.IntegerField()
     def __str__(self):
-        return self.nombre
+        return self.nombre_plato
 
 class Comentarios(models.Model):
     nombre_cliente = models.CharField(max_length=50)
     opinion = models.TextField(max_length=200)
     nota = models.IntegerField()
     def __str__(self):
-        return self.nombre
+        return self.nombre_cliente

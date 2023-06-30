@@ -9,10 +9,11 @@
     {% block 'carousel' %}
     {%include 'carousel.html' %}
     {% endblock %}
-
+    <div class="titulo_platos">
     <h1>Lista de Platos</h1>
+    </div>
     {% for plato in platos %}
-        <div>
+        <div class="platos">
             <h2>{{ plato.nombre }}</h2>
             <p>{{ plato.descripcion }}</p>
             <img src="{{ plato.img }}" alt="{{ plato.nombre }}">
