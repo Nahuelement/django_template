@@ -1,18 +1,15 @@
-<!doctype html>
 
-<html>
-<head>
-    <title>Lista de Platos</title>
-</head>
-<body>
-    {% block 'base' %}
-    {%include 'base.html' %}
-    {% endblock %}
+{% extends 'base.html' %}
+
+{%load  static %}
+
+
+{% block main%}
 
     {% block 'carousel' %}
     {%include 'carousel.html' %}
     {% endblock %}
-    
+
     <h1>Lista de Platos</h1>
     {% for plato in platos %}
         <div>
@@ -22,6 +19,5 @@
             <p>Precio: {{ plato.precio }}</p>
         </div>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
 
