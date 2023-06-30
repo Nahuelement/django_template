@@ -9,3 +9,4 @@ def home(request):
 def eventos_congresos(request):
     return render(request, 'eventos_congresos.html')
 # Create your views here.
+
