@@ -12,13 +12,20 @@
     <div class="titulo_platos">
     <h1>Lista de Platos</h1>
     </div>
-    {% for plato in platos %}
-        <div class="platos">
-            <h2>{{ plato.nombre }}</h2>
-            <p>{{ plato.descripcion }}</p>
-            <img src="{{ plato.img }}" alt="{{ plato.nombre }}">
-            <p>Precio: {{ plato.precio }}</p>
-        </div>
-    {% endfor %}
+
+    <div class="platos">
+        {% for plato in platos %}
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>{{ plato.nombre_plato }}</h2>
+                  <p class="card-text">{{ plato.descripcion }}</p>
+                  <p>Precio: {{ plato.precio }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
 {% endblock %}
 
