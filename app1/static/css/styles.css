@@ -1,4 +1,15 @@
+.carousel{
+    display: flex;
+    position: fixed;
+}
 
+.navbar{
+    display: flex;
+    background: transparent!important;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+}
 
 .titulo_platos{
     display: flex;
