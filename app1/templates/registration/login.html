@@ -1,0 +1,38 @@
+
+
+{% extends 'base.html' %}
+
+{%load  static %}
+
+
+{% block main%}
+
+<div style="display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:15%
+            ">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="">
+        <img src="" id="icon" alt="User Icon" />
+      </div>
+
+      <!-- Login Form -->
+      <form class="login" method="post">
+        {% csrf_token %}
+
+        <input class="form-control" type="text" id="login" name="username"   placeholder="login">
+        <input class="form-control"  type="password" id="password"  name="password" placeholder="password">
+        <input class="btn btn-primary"  type="submit" >
+      </form>
+
+
+
+    </div>
+  </div>
+
+  {% endblock %}

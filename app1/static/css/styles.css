@@ -37,3 +37,67 @@
     /* Agrega más estilos según sea necesario */
   }
 
+
+.login{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.reserva{
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding:5%
+
+}
+
+.form-control{
+    display: flex;
+    letter-spacing: 2px!important;
+    max-width: 300px;
+}
+
+
+label[for="labelInput"] {
+    display: flex;
+    letter-spacing: 2px!important
+
+}
+
+.navbar-nav{
+
+    display: flex;
+    padding-right: 4%;
+    gap: 10px;
+
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: large;
+    min-width: 100px;
+
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 1%;
+
+}

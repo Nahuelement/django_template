@@ -16,3 +16,15 @@ class Comentarios(models.Model):
     nota = models.IntegerField()
     def __str__(self):
         return self.nombre_cliente
+
+
+class Reservas(models.Model):
+    nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    fecha = models.DateField()
+    hora = models.TimeField()
+    email = models.EmailField()
+    personas = models.IntegerField()
+    comentarios = models.TextField(max_length=200)
+    def __str__(self):
+        return f'{self.nombre } {self.apellido }'
