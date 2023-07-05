@@ -26,6 +26,23 @@
         {% endfor %}
     </div>
 
+    <div class="Eventos">
+
+        <h1>Eventos</h1>
+        </div>
+    
+        <div class="eventos">
+            {% for evento in eventos %}
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2>{{ evento.nombre_evento }}</h2>
+                      <p class="card-text">{{ evento.descripcion }}</p>
+                      <p>Precio: {{ evento.precio }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
 
 {% endblock %}
 
