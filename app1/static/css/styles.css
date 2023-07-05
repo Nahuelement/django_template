@@ -6,6 +6,7 @@
 .navbar{
     display: flex;
     background: transparent!important;
+    transition:  ease-in-out 1s;
     width: 100vw;
     position: fixed;
     z-index: 99;
@@ -101,3 +102,10 @@ label[for="labelInput"] {
     padding: 1%;
 
 }
+
+.navbar-color {
+
+    background-color: floralwhite !important;
+
+    transition:  ease-in-out 1s;
+  }
