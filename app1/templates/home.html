@@ -1,5 +1,5 @@
-
 {% extends 'base.html' %}
+{% load app1_tags %}
 
 {%load  static %}
 
@@ -25,10 +25,31 @@
             </div>
         {% endfor %}
     </div>
+    <div class="titulo_platos">
+        <h1>Promociones</h1>
+        </div>
 
     {% if user.is_authenticated %}
-    
-    <p>Bienvenido, {{ user.username }}.</p>
+    <div >
+        <p>Bienvenido, {{ user.username }}.</p>
+    </div>
+
+
+    <div class="platos">
+        {% get_ofertas as ofertas %}
+        {% for promos in ofertas %}
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2>{{ promos.nombre_plato }} + Bebida</h2>
+                  <p class="card-text">{{ promos.descripcion }}</p>
+                  <p>Precio oferta: {{ promos.promocion }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
         {% else %}
     <p>Inicia sesión para acceder al contenido.</p>
         {% endif %}

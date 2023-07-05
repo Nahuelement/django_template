@@ -28,10 +28,11 @@ class Reservas(models.Model):
     comentarios = models.TextField(max_length=200)
     def __str__(self):
         return f'{self.nombre } {self.apellido }'
-    
+
 class Evento(models.Model):
     nombre_evento = models.CharField(max_length=50)
     descripcion = models.TextField(max_length=200)
+    fecha = models.DateField()
     img = models.CharField(max_length=50)
     precio = models.IntegerField()
     def __str__(self):

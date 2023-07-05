@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Plato, Reservas, Evento
 from .forms import FormReservas
 
+
 def home(request):
     platos = Plato.objects.all()
     eventos = Evento.objects.all()
@@ -10,7 +11,7 @@ def home(request):
     return render(request, "home.html", {"platos":platos,'eventos':eventos})
 
 def eventos_congresos(request):
-    eventos = Evento.objects.all()
+    eventos = Evento.objects.all().order_by('fecha')
 
     return render(request, 'eventos_congresos.html',{'eventos':eventos})
 # Create your views here.
