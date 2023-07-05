@@ -14,7 +14,8 @@
 
 .titulo_platos{
     display: flex;
-    padding-top: 5%;
+    padding-top: 8%;
+    margin-bottom: 3%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -105,7 +106,15 @@ label[for="labelInput"] {
 
 .navbar-color {
 
-    background-color: floralwhite !important;
 
     transition:  ease-in-out 1s;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+
+  }
+
+
+  .navbar-blur{
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
   }

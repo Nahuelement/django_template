@@ -1,14 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Plato, Reservas
+from .models import Plato, Reservas, Evento
 from .forms import FormReservas
 
 def home(request):
     platos = Plato.objects.all()
-    return render(request, "home.html", {"platos":platos})
+    eventos = Evento.objects.all()
+
+    return render(request, "home.html", {"platos":platos,'eventos':eventos})
 
 def eventos_congresos(request):
-    return render(request, 'eventos_congresos.html')
+    eventos = Evento.objects.all()
+
+    return render(request, 'eventos_congresos.html',{'eventos':eventos})
 # Create your views here.
 
 def reservas(request):
