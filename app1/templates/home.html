@@ -26,6 +26,13 @@
         {% endfor %}
     </div>
 
+    {% if user.is_authenticated %}
+    
+    <p>Bienvenido, {{ user.username }}.</p>
+        {% else %}
+    <p>Inicia sesión para acceder al contenido.</p>
+        {% endif %}
+
     <div class="titulo_platos">
 
         <h1>Eventos</h1>
