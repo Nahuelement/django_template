@@ -4,9 +4,16 @@
 *{
     font-family: 'Lato', sans-serif;
 }
+main{
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
 
 .carousel{
-    
+
     position: fixed;
 }
 
@@ -22,7 +29,7 @@
 .titulo_platos{
     display: flex;
     padding-top: 8%;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -45,7 +52,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     margin: 15px;
     /* Agrega más estilos según sea necesario */
   }
