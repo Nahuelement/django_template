@@ -30,10 +30,6 @@
         </div>
 
     {% if user.is_authenticated %}
-    <div >
-        <p>Bienvenido, {{ user.username }}.</p>
-    </div>
-
 
     <div class="platos">
         {% get_ofertas as ofertas %}
@@ -50,8 +46,16 @@
     </div>
 
 
-        {% else %}
-    <p>Inicia sesión para acceder al contenido.</p>
+    {% else %}
+        <div style="display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:5%
+            ">
+    <h3 class="text-success">Inicia sesión para acceder al contenido.</h3>
+
+</div>
         {% endif %}
 
     <div class="titulo_platos">
