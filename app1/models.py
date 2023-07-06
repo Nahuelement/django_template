@@ -5,7 +5,7 @@ from django.db import models
 class Plato(models.Model):
     nombre_plato = models.CharField(max_length=50)
     descripcion = models.TextField(max_length=200)
-    img = models.CharField(max_length=50)
+    img = models.CharField(max_length=200)
     precio = models.IntegerField()
     def __str__(self):
         return self.nombre_plato
