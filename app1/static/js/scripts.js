@@ -1,33 +1,26 @@
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var is_up = true;
-//     var bottonNavbar = document.querySelector(".navbar-toggler");
-//     bottonNavbar.addEventListener("click", function() {
+// window.onload = function() {
+//     var carousel = document.getElementById('carouselExampleFade');
+//     var carouselItems = carousel.getElementsByClassName('carousel-item');
+//     var interval = 3000; // Tiempo en milisegundos entre cada cambio de imagen
+//     var currentIndex = 0;
 
-//       navbar.classList.add('navbar-color');
-//       is_up = true
+//     function startCarousel() {
+//       setInterval(function() {
+//         carouselItems[currentIndex].classList.remove('active');
+//         carouselItems[currentIndex].classList.add('carousel-item-start');
+//         currentIndex = (currentIndex + 1) % carouselItems.length;
+//         carouselItems[currentIndex].classList.add('active');
+//         carouselItems[currentIndex].classList.add('carousel-item-next');
+//         setTimeout(function() {
+//           carouselItems[currentIndex].classList.remove('carousel-item-next');
+//           carouselItems[currentIndex].classList.add('carousel-item-start');
+//         }, 600); // Duración de la transición en milisegundos (ajústala según tu configuración CSS)
+//       }, interval);
+//     }
 
-//       })
-
-//     window.addEventListener('scroll', function() {
-//       var navbar = document.querySelector('.navbar');
-//       if (window.scrollY > 50) {
-//         navbar.classList.add('navbar-color');
-
-//       } else {
-//         if(is_up != true){
-//           navbar.classList.remove('navbar-color');
-//         }
-//     }});
-//   });
-
-//   var bottonNavbar = document.querySelector(".navbar-toggler");
+//     startCarousel();
+//   };
 
 
-//   bottonNavbar.addEventListener("click", function() {
-//     var navbar = document.querySelector('.navbar');
-//     // Aquí puedes colocar el código de la función que deseas ejecutar
-//     // alert("¡El botón ha sido presionado!");
-//     navbar.classList.add('navbar-color');
-//     // Otras instrucciones...
-//   });
+

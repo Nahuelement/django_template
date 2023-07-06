@@ -1,5 +1,12 @@
+
+
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
 .carousel{
-    display: flex;
+    
     position: fixed;
 }
 
@@ -90,7 +97,7 @@ label[for="labelInput"] {
     flex-direction: row;
     gap: 5px;
     justify-content: center;
-   
+
 
     font-size: large;
     min-width: 100px;
