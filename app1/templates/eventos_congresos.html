@@ -7,19 +7,19 @@
 {% block main%}
 
 
-    <div class="titulo_platos" style="padding-top: 10%;">
+<div class="titulo_platos">
 
-    <h1>Proximos Eventos</h1>
+    <h1>Eventos</h1>
     </div>
 
     <div class="platos">
         {% for evento in eventos %}
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card" style="width: 18rem; margin: 2rem">
+                <img src="{{evento.img}}" style="max-height: 200px;min-height: 200px" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h2>{{ evento.nombre_evento }}</h2>
                   <p class="card-text">{{ evento.descripcion }}</p>
-                  <p>Precio: {{ evento.precio }}</p>
+                  <p>Precio: ${{ evento.precio }}</p>
                 </div>
             </div>
         {% endfor %}

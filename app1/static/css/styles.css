@@ -5,6 +5,7 @@
     font-family: 'Lato', sans-serif;
 }
 main{
+
     background: #FFEFBA;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -29,7 +30,6 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 .titulo_platos{
     display: flex;
     padding-top: 8%;
-    margin-bottom: 0%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -39,10 +39,12 @@ background: linear-gradient(to top, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Fir
 
 .platos{
     display: grid;
+
     width: 100%;
+
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(150px, auto);
-    
+
 
 
 }

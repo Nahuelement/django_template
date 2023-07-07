@@ -15,12 +15,12 @@
 
     <div class="platos">
         {% for plato in platos %}
-            <div class="card" style="width: 18rem;">
-                <img src="{{plato.img}}" class="card-img-top" alt="...">
+            <div class="card" style="width: 18rem; margin: 2rem">
+                <img src="{{plato.img}}" style="max-height: 200px;min-height: 200px" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h2>{{ plato.nombre_plato }}</h2>
                   <p class="card-text">{{ plato.descripcion }}</p>
-                  <p>Precio: {{ plato.precio }}</p>
+                  <p>Precio: ${{ plato.precio }}</p>
                 </div>
             </div>
         {% endfor %}
@@ -34,12 +34,12 @@
     <div class="platos">
         {% get_ofertas as ofertas %}
         {% for promos in ofertas %}
-            <div class="card" style="width: 18rem;">
-                <img src="{{promos.img}}" class="card-img-top" alt="...">
+            <div class="card" style="width: 18rem; margin: 2rem"">
+                <img src="{{promos.img}}" style="max-height: 200px;min-height: 200px" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h2>{{ promos.nombre_plato }} + Bebida</h2>
                   <p class="card-text">{{ promos.descripcion }}</p>
-                  <p>Precio oferta: {{ promos.promocion }}</p>
+                  <p>Precio oferta: ${{ promos.promocion }}</p>
                 </div>
             </div>
         {% endfor %}
@@ -65,12 +65,12 @@
 
         <div class="platos">
             {% for evento in eventos %}
-                <div class="card" style="width: 18rem;">
-                    <img src="{{evento.img}}" class="card-img-top" alt="...">
+                <div class="card" style="width: 18rem; margin: 2rem">
+                    <img src="{{evento.img}}" style="max-height: 200px;min-height: 200px" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h2>{{ evento.nombre_evento }}</h2>
                       <p class="card-text">{{ evento.descripcion }}</p>
-                      <p>Precio: {{ evento.precio }}</p>
+                      <p>Precio: ${{ evento.precio }}</p>
                     </div>
                 </div>
             {% endfor %}
