@@ -21,13 +21,15 @@
             padding:5%;
             padding-top: 10%;"
             >
+<div id="formContent" class="back-color-form">
 <form class="reserva" method="post">
 
     {{ reserva }}
     {% csrf_token %}
-    <input class="btn btn-primary" type="submit" value="Reservar">
+    <input class="btn btn-success" style="margin: 15px;min-width:120px" type="submit" value="Reservar">
 
 </form>
+</div>
 </div>
 
 {% endif %}

@@ -21,7 +21,7 @@
         </li>
         {% if user.is_authenticated %}
         <li class="nav-item">
-            <p class="nav-link text-warning" >Bienvenido, {{ user.username }}.</p>
+            <a class="nav-link text-warning" >Bienvenido, {{ user.username }}.</a>
         </li>
         {% else %}
         <li class="nav-item">
