@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Logged out{% endblock %}
+
+{% block main %}
+<div style="display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:5%;
+            padding-top: 10%;"
+            >
+  <h1>Acabas de cerrar sesion</h1>
+  <p>
+    Ha sido cerrado sesion exitosamente tu sesion.
+    puedes volver a <a href="{% url "login" %}">iniciar sesion aca</a>.
+  </p>
+</div>
+{% endblock %}
